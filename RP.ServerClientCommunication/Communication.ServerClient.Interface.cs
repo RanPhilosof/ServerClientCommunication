@@ -4,6 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+#if NET6_0
+    using Int128 = System.Int64;
+#endif
+
 namespace RP.Communication.ServerClient.Interface
 {
     public interface IClientCommunication

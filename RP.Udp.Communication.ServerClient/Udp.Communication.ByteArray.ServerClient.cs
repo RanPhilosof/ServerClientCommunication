@@ -6,6 +6,10 @@ using System.Net.Sockets;
 using System.Runtime.InteropServices;
 using System.Text;
 
+#if NET6_0
+    using Int128 = System.Int64;
+#endif
+
 namespace Udp.Communication.ByteArray.ServerClient;
 
 public enum MessageFlags

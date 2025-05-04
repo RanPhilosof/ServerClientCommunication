@@ -13,7 +13,11 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using static System.Runtime.InteropServices.JavaScript.JSType;
+//using static System.Runtime.InteropServices.JavaScript.JSType;
+
+#if NET6_0
+    using Int128 = System.Int64;
+#endif
 
 namespace Tcp.Communication.ByteArray.ServerClient;
 
